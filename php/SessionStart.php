@@ -10,7 +10,7 @@ if (session_status() == PHP_SESSION_NONE) {
 }
 
 // PHP < 5.4.0
-if(session_id() == '') {
+if (session_id() == '') {
     session_start();
 }
 
