@@ -25,6 +25,3 @@ var_dump($diff);
 
 $union = array_union($array1, $array2);
 var_dump($union);
-
-?>
-

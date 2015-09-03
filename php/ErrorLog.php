@@ -19,5 +19,3 @@ register_shutdown_function(function() {
         file_put_contents(".errors", "------------------------------------------------------\n", FILE_APPEND);
     }
 });
-
-?>
