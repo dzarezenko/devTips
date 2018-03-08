@@ -4,6 +4,7 @@
 - [Create a new repository](#create-a-new-repository)
 - [Existing folder](#existing-folder)
 - [Existing Git repository](#existing-git-repository)
+- [Store credentials](#store-credentials)
 
 ### Git global user setup
 ```
@@ -39,3 +40,35 @@ git remote add origin https://github.com/dzarezenko/devTips.git
 git push -u origin --all
 git push -u origin --tags
 ```
+
+### Store credentials
+
+For temporary store credentials in memory use: 
+
+```
+git config --global credential.helper cache
+```
+
+For permanent store use: 
+
+```
+git config --global credential.helper store
+```
+
+After that use:
+
+```
+git config --global credential.https://github.com.username github
+```
+or
+```
+git config --global credential.https://bitbucket.org@myemail.gmail.com bitbucket
+```
+
+Then clone repository and type password when it will ask you.
+
+More details:
+1. [`gitcredentials` - providing usernames and passwords to Git](https://git-scm.com/docs/gitcredentials)
+2. [How to provide username and password when run “git clone git@remote.git”?
+](https://stackoverflow.com/questions/10054318/how-to-provide-username-and-password-when-run-git-clone-gitremote-git)
+
