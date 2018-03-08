@@ -2,8 +2,8 @@
 
 - [Git global user setup](#git-global-user-setup)
 - [Create a new repository](#create-a-new-repository)
-- [Existing folder](#existing-folder)
-- [Existing Git repository](#existing-git-repository)
+- [Init repository in existing folder](#init-repository-in-existing-folder)
+- [Switch existing Git repository](#switch-existing-git-repository)
 - [Store credentials](#store-credentials)
 
 ### Git global user setup
@@ -22,7 +22,7 @@ git commit -m "add README"
 git push -u origin master
 ```
 
-### Existing folder
+### Init repository in existing folder
 ```
 cd existing_folder
 git init
@@ -32,7 +32,7 @@ git commit -m "Initial commit"
 git push -u origin master
 ```
 
-### Existing Git repository
+### Switch existing Git repository
 ```
 cd existing_repo
 git remote rename origin old-origin
