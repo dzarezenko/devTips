@@ -1,4 +1,4 @@
-## Command line instructions
+## Git: useful command line instructions
 
 - [Git global user setup](#git-global-user-setup)
 - [Create a new repository](#create-a-new-repository)
