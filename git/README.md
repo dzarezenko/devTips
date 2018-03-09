@@ -5,6 +5,7 @@
 - [Init repository in existing folder](#init-repository-in-existing-folder)
 - [Switch existing Git repository](#switch-existing-git-repository)
 - [Store credentials](#store-credentials)
+- [Revert commit](#revert-commit)
 
 ### Git global user setup
 ```
@@ -69,6 +70,24 @@ Then clone repository and type password when it will ask you.
 
 More details:
 1. [`gitcredentials` - providing usernames and passwords to Git](https://git-scm.com/docs/gitcredentials)
-2. [How to provide username and password when run “git clone git@remote.git”?
+2. [How to provide username and password when run `git clone git@remote.git`?
 ](https://stackoverflow.com/questions/10054318/how-to-provide-username-and-password-when-run-git-clone-gitremote-git)
 
+### Revert commit
+
+Revert last commit locally:
+
+```
+git reset --soft HEAD~1
+```
+
+Apply revert on the remote repository:
+
+```
+git push -f origin local_branch_name:remote_branch_name
+```
+
+More information:
+1. [What is difference between `git reset --hard HEAD~1` and `git reset --soft HEAD~1`?
+](https://stackoverflow.com/questions/24568936/what-is-difference-between-git-reset-hard-head1-and-git-reset-soft-head)
+2. [`git-reset` - Reset current HEAD to the specified state](https://git-scm.com/docs/git-reset)
