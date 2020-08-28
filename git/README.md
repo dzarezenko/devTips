@@ -3,6 +3,7 @@
 - [Git global user setup](#git-global-user-setup)
 - [Create a new repository](#create-a-new-repository)
 - [Init repository in existing folder](#init-repository-in-existing-folder)
+- [Bind remote repository with local one](#bind-remote-repository-with-local-one)
 - [Switch existing Git repository](#switch-existing-git-repository)
 - [Store credentials](#store-credentials)
 - [Revert commit](#revert-commit)
@@ -33,6 +34,15 @@ git commit -m "Initial commit"
 git push -u origin master
 ```
 
+### Bind remote repository with local one
+```
+git add .
+git commit -m "Initial commit"
+git remote add origin https://github.com/dzarezenko/devTips.git
+git pull origin master --allow-unrelated-histories
+git push
+```
+
 ### Switch existing Git repository
 ```
 cd existing_repo
@@ -44,13 +54,13 @@ git push -u origin --tags
 
 ### Store credentials
 
-For temporary store credentials in memory use: 
+For temporary store credentials in memory use:
 
 ```
 git config --global credential.helper cache
 ```
 
-For permanent store use: 
+For permanent store use:
 
 ```
 git config --global credential.helper store
