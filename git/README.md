@@ -40,7 +40,7 @@ git add .
 git commit -m "Initial commit"
 git remote add origin https://github.com/dzarezenko/devTips.git
 git pull origin master --allow-unrelated-histories
-git push
+git push -u origin master
 ```
 
 ### Switch existing Git repository
