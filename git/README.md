@@ -7,6 +7,7 @@
 - [Switch existing Git repository](#switch-existing-git-repository)
 - [Store credentials](#store-credentials)
 - [Revert commit](#revert-commit)
+- [Case sensitive file names](#case-sensitive-file-names)
 
 ### Git global user setup
 ```
