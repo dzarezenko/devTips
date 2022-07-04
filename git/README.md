@@ -101,3 +101,17 @@ More information:
 1. [What is difference between `git reset --hard HEAD~1` and `git reset --soft HEAD~1`?
 ](https://stackoverflow.com/questions/24568936/what-is-difference-between-git-reset-hard-head1-and-git-reset-soft-head)
 2. [`git-reset` - Reset current HEAD to the specified state](https://git-scm.com/docs/git-reset)
+
+### Case sensitive file names
+
+To tell Git to be case-senstive, simply set this setting to `false`...
+
+```
+git config core.ignorecase false
+```
+
+Remove a file from a Git repository without deleting it from the local filesystem.
+
+```
+git rm --cached filename.ext
+```
