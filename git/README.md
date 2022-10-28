@@ -8,6 +8,7 @@
 - [Store credentials](#store-credentials)
 - [Revert commit](#revert-commit)
 - [Case sensitive file names](#case-sensitive-file-names)
+- [Transfer a gist to a GitHub repository](#transfer-a-gist-to-a-github-repository)
 
 ### Git global user setup
 ```
@@ -116,3 +117,7 @@ Remove a file from a Git repository without deleting it from the local filesyste
 ```
 git rm --cached filename.ext
 ```
+
+### Transfer a gist to a GitHub repository
+
+https://gist.github.com/ishu3101/830b556b487de5d69690
